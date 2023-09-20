@@ -11,6 +11,7 @@ namespace WFC_Controls
         public int LocationOffsetY = -21;
         public int SizeOffsetX = 15;
         public int SizeOffsetY = 25;
+
         public void PageControlResize(object sender, EventArgs e)
         {
             TabControl cnt = TabControl;
@@ -20,6 +21,13 @@ namespace WFC_Controls
 
             cnt.Size = new Size(pnt.Size.Width + SizeOffsetX, pnt.Size.Height + SizeOffsetY);
             cnt.Location = new Point(LocationOffsetX, LocationOffsetY);
+        }
+
+        public static void ConvertingTabControlToPageControl(TabControl tabControl)
+        {
+            PageControl pageControl = new PageControl { TabControl = tabControl };
+            tabControl.Parent.Resize += new EventHandler(pageControl.PageControlResize);
+            pageControl.PageControlResize(tabControl.Parent, null);
         }
     }
 }
