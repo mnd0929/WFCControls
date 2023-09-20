@@ -29,7 +29,7 @@ namespace WFC_Controls
         //
         // Сводка:
         //     Убирает рамки с TabControl.
-        //     <!> После преобразования, свойство элемента управления Dock визуально всегда будет иметь значение DockStyle.Fill
+        //     <!> После преобразования свойство элемента управления Dock визуально всегда будет иметь значение DockStyle.Fill
         public static void ConvertingTabControlToPageControl(TabControl tabControl)
         {
             PageControl pageControl = new PageControl { TabControl = tabControl };
