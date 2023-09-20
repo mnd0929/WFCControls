@@ -12,6 +12,9 @@ namespace WFC_Controls
         public int SizeOffsetX = 15;
         public int SizeOffsetY = 25;
 
+        //
+        // Сводка:
+        //     Событие Resize элемента управления TabControl для скрытия его рамок
         public void PageControlResize(object sender, EventArgs e)
         {
             TabControl cnt = TabControl;
@@ -23,6 +26,10 @@ namespace WFC_Controls
             cnt.Location = new Point(LocationOffsetX, LocationOffsetY);
         }
 
+        //
+        // Сводка:
+        //     Убирает рамки с TabControl.
+        //     <!> После преобразования, свойство элемента управления Dock визуально всегда будет иметь значение DockStyle.Fill
         public static void ConvertingTabControlToPageControl(TabControl tabControl)
         {
             PageControl pageControl = new PageControl { TabControl = tabControl };
