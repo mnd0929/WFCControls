@@ -2,7 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace WFC_Controls
+namespace WFCControls
 {
     public class PageControl
     {
