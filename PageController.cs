@@ -9,7 +9,7 @@ namespace WFCControls.Pages
     /// <summary>
     /// TabControl content area offset due to its controls
     /// </summary>
-    public class TabControlCapOffests
+    internal class TabControlCapOffests
     {
         public const int LocationOffsetX = -10;
 
