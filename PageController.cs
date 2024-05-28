@@ -4,7 +4,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace WFCControls.PageController
+namespace WFCControls.Pages
 {
     /// <summary>
     /// TabControl content area offset due to its controls
